@@ -16,3 +16,7 @@
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/2
 <img src="ReadmeImg/buttonfilter.gif">
 
+## 3. VideoText
+- 작성일자 : 2022-04-27
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/3
+<img src="ReadmeImg/VideoText.gif">
