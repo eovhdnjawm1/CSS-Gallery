@@ -20,3 +20,7 @@
 - 작성일자 : 2022-04-27
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/3
 <img src="ReadmeImg/VideoText.gif">
+
+## 4. Loading Bar
+- 작성일자 : 2022-04-28
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/4
