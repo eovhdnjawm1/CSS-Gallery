@@ -1,4 +1,4 @@
-.Lodding {
+.Loading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -6,15 +6,15 @@
 	background-color: grey;
 }
 
-.Lodding h1 {
+.Loading h1 {
 	color: #fff;
 	font-size: 4rem;
 	position: absolute;
 }
 
 /* none background color */
-.Lodding h1::before {
-	content: "Lodding...";
+/* .Loading h1::before {
+	content: "Loading...";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -25,11 +25,11 @@
 	overflow: hidden;
 	color: greenyellow;
 	animation: Loader 4s linear infinite;
-}
+} */
 
 /* background color */
-/* .Lodding h1::before {
-	content: "Lodding...";
+.Loading h1::before {
+	content: "Loading...";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -41,7 +41,7 @@
 	background-color: greenyellow;
 	color: #fff;
 	animation: Loader 4s linear infinite;
-} */
+}
 
 @keyframes Loader {
 
@@ -52,7 +52,7 @@
 	}
 
 	60%,
-	100% {
+	80% {
 		width: 100%;
 	}
 }
