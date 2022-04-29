@@ -37,3 +37,8 @@
 - 작성일자 : 2022-04-29
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/5
 <img src="ReadmeImg/LinkHover.gif">
+
+## 6. Image Color Up
+- 작성일자 : 2022-04-29
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/6
+<img src="ReadmeImg/ImageColorUp.gif">
