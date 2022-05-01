@@ -47,3 +47,9 @@
 - 작성일자 : 2022-04-30
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/7
 <img src="ReadmeImg/3D_Card.gif">
+
+
+## 8. 3D Flip Card Animation
+- 작성일자 : 2022-05-01
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/8
+<img src="ReadmeImg/FlipCard.gif">
