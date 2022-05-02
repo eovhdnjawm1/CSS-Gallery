@@ -1,0 +1,82 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	background: #1e2d3b;
+}
+
+
+.navBar {
+	position: relative;
+	display: block;
+	background-color: #111111;
+	padding: 10px;
+	border-radius: 10px;
+	transform: scale(1.8);
+	overflow: hidden;
+}
+
+.navBar a {
+	position: relative;
+	width: 80px;
+	color: #fff;
+	font-size: 0.7rem;
+	text-align: center;
+	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	z-index: 100;
+}
+
+.navBar b {
+	position: relative;
+	bottom: 40px;
+	transition: 0.3s ease bottom;
+
+}
+
+.navBar i {
+	position: relative;
+	left: 20%;
+	transition: 0.3s ease left;
+
+}
+
+.navBar span {
+	position: absolute;
+	width: 80px;
+	background-color: #0560FE;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	border-radius: 10px;
+	z-index: 1;
+	transition: 0.3s ease left;
+}
+
+.navBar a:hover b {
+	bottom: 0;
+}
+
+.navBar a:hover i {
+	left: -5px;
+}
+
+.navBar:hover span {
+	background: #0560FE;
+}
+
+.navBar a:nth-child(1):hover~span {
+	left: 10px;
+}
+
+.navBar a:nth-child(2):hover~span {
+	left: 93px;
+}
+
+.navBar a:nth-child(3):hover~span {
+	left: 180px;
+}
