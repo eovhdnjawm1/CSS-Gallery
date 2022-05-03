@@ -55,8 +55,14 @@
 <img src="ReadmeImg/FlipCard.gif">
 
 
-## 8. 3D Flip Card Animation
+## 9. Nav Menus 
 - 작성일자 : 2022-05-02
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/9
 <img src="ReadmeImg/Menus.gif">
+
+## 10. Change Figure
+- 작성일자 : 2022-05-03
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/10
+<img src="ReadmeImg/Changefigure.gif">
+
 
