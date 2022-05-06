@@ -74,3 +74,8 @@
 - 작성일자 : 2022-05-05
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/12
 <img src="ReadmeImg/SkewButtonAni.gif">
+
+## 13. Hover Effect 
+- 작성일자 : 2022-05-06
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/13
+<img src="ReadmeImg/HoverEffect.gif">
