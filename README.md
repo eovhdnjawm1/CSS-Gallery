@@ -85,7 +85,7 @@
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/14
 <img src="ReadmeImg/ButtonHoverAni.gif">
 
-## 14. Button Hover Animation
+## 15. Gradient Box
 - 작성일자 : 2022-05-08
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/15
 <img src="ReadmeImg/GradientBox.gif">
