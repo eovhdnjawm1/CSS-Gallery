@@ -108,3 +108,7 @@
 - 작성일자 : 2022-05-15
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/19
 <img src="ReadmeImg/PulseAnimation.gif">
+
+- 작성일자 : 2022-05-18
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/20
+<img src="ReadmeImg/TextEffect.gif">
