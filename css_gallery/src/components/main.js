@@ -1,7 +1,9 @@
+import '../css/Main.css'
+
 function MainContainer() {
 	return (
-		<div>
-			<h1>CSS Gallery</h1>
+		<div className='mainContainer'>
+			<h1 className='mainTitle'>CSS Gallery</h1>
 		</div>
 	)
 }
