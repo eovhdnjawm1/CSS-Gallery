@@ -18,33 +18,23 @@ function MainContainer() {
 	let [content, setcontent] = useState();
 	let [cssImage, setCssImage] = useState();
 
+	let [clicks, setClicks] = useState([]);
+
 	useEffect(() => {
-			axios.get(url + json3D).then((res) => {
-			// console.log('res.data.title', res.data.title)
-			// console.log('copy', ...copy)
-			// this.setUsers(res.data)
+		axios.get(url + jsonButton).then((res) => {
 			let copy = [...res.data]
-			setUsers(copy)
+			setClicks(copy)
 		})
+		axios.get(url + json3D).then((res) => {
+		let copy = [...res.data]
+		setUsers(copy)
+	})
 	},[])
 
 	return (
 		<div className='mainContainer'>
 			<h1 className='mainTitle'>CSS Gallery</h1>
-			<button onClick={ async () => {
-				await axios.get(url + json3D).then((res) => { 
-					// console.log("res.data",res.data)
-					let copy = [...res.data]
-					// console.log("copy",copy[1].title)
-					setUsers(copy)
-					// console.log("users",users[2].title)
-				})
-				.catch(() => {
-					console.log('실패')
-				})
-			}}>버튼
-				
-			</button>
+			<h1 style={{color: "#fff"}}>Profile</h1>
 			<div className='cssContainer'>
 			{
 				users.map(function(val, i) {
@@ -55,9 +45,16 @@ function MainContainer() {
 					)
 				})
 			}
-				{/* <h1>{users[0].title}</h1> */}
+			{
+				clicks.map(function(val, i) {
+					return (
+						<div  key={i}>
+							<ButtonCss clicks={clicks} i={i}></ButtonCss>
+						</div>
+					)
+				})
+			}
 			</div>
-			{/* <UserList users={users}></UserList> */}
 		</div>
 	)
 }
@@ -74,6 +71,19 @@ function UserList(props) {
 	) 
 } 
 
+
+function ButtonCss(props) {
+	console.log("버튼css")
+	return(
+
+		<div className='cssContatinerSub'>
+			<img src={`${props.users[props.i].image}`} alt="#" width="80%" />
+			<h4>{props.users[props.i].title}</h4>
+			<p>{props.users[props.i].record} </p>
+		</div>
+	)
+	
+}
 
 // async function Test() {
 // 	const test = await axios.get(`my-json-server.typicode.com/eovhdnjawm1/posts?id=${test}`);
