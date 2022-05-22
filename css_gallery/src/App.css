@@ -5,7 +5,23 @@
   height: 100vh;
 }
 
-.cssContainer {
+.cssContainerSub {
   display: flex;
+  flex-direction: column;
+
+  color: #fff;
+
+}
+
+.cssContainerSub img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.cssContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
 }

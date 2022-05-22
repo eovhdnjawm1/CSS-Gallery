@@ -45,11 +45,11 @@ function MainContainer() {
 			}}>버튼
 				
 			</button>
-			<div>
+			<div className='cssContainer'>
 			{
 				users.map(function(val, i) {
 					return (
-						<div key={i}>
+						<div  key={i}>
 							<UserList users={users} i={i}></UserList>
 						</div>
 					)
@@ -66,7 +66,7 @@ function UserList(props) {
 	console.log("타이틀 다뽑기",props.users[props.i].title)
 	console.log(props.i);
 	return (
-		<div className='cssContainer'>
+		<div className='cssContainerSub'>
 			<img src={`${props.users[props.i].image}`} alt="#" width="80%" />
 			<h4>{props.users[props.i].title}</h4>
 			<p>{props.users[props.i].record} </p>
