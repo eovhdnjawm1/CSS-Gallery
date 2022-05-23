@@ -19,15 +19,27 @@ function MainContainer() {
 	let [cssImage, setCssImage] = useState();
 
 	let [clicks, setClicks] = useState([]);
+	let [effects, setEffects] = useState([]);
+	let [navBars, setNavBars] = useState([]);
 
 	useEffect(() => {
+		axios.get(url + json3D).then((res) => {
+		let copy = [...res.data]
+		setUsers(copy)
+
 		axios.get(url + jsonButton).then((res) => {
 			let copy = [...res.data]
 			setClicks(copy)
 		})
-		axios.get(url + json3D).then((res) => {
-		let copy = [...res.data]
-		setUsers(copy)
+
+		axios.get(url + jsonEffect).then((res) => {
+			let copy = [...res.data]
+			setEffects(copy)
+		})
+		axios.get(url + jsonNav).then((res) => {
+			let copy = [...res.data]
+			setNavBars(copy)
+		})
 	})
 	},[])
 
@@ -54,14 +66,30 @@ function MainContainer() {
 					)
 				})
 			}
+			{
+				effects.map(function(val, i) {
+					return (
+						<div  key={i}>
+							<EffectCss effects={effects} i={i}></EffectCss>
+						</div>
+					)
+				})
+			}
+			{
+				navBars.map(function(val, i) {
+					return (
+						<div  key={i}>
+							<NavBarCss navBars={navBars} i={i}></NavBarCss>
+						</div>
+					)
+				})
+			}
 			</div>
 		</div>
 	)
 }
 
 function UserList(props) {
-	console.log("타이틀 다뽑기",props.users[props.i].title)
-	console.log(props.i);
 	return (
 		<div className='cssContainerSub'>
 			<img src={`${props.users[props.i].image}`} alt="#" width="80%" />
@@ -82,7 +110,30 @@ function ButtonCss(props) {
 			<p>{props.clicks[props.i].record} </p>
 		</div>
 	)
+}
+
+function EffectCss(props) {
 	
+	return(
+
+		<div className='cssContatinerSub'>
+			<img src={`${props.effects[props.i].image}`} alt="#" width="80%" />
+			<h4>{props.effects[props.i].title}</h4>
+			<p>{props.effects[props.i].record} </p>
+		</div>
+	)
+}
+
+function NavBarCss(props) {
+	
+	return(
+
+		<div className='cssContatinerSub'>
+			<img src={`${props.navBars[props.i].image}`} alt="#" width="80%" />
+			<h4>{props.navBars[props.i].title}</h4>
+			<p>{props.navBars[props.i].record} </p>
+		</div>
+	)
 }
 
 
