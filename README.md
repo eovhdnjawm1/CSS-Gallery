@@ -109,7 +109,9 @@
 ## 19. Pulse Animation
 - 작성일자 : 2022-05-15
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/19
+
 <img src="ReadmeImg/PulseAnimation.gif">
+
 
 ## 20. Text Effect
 - 작성일자 : 2022-05-18
@@ -120,3 +122,8 @@
 - 작성일자 : 2022-05-20
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/21
 <img src="ReadmeImg/ResponsiveNavBar.gif">
+
+## 22. Focus Blur Event
+- 작성일자 : 2022-05-23
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/22
+<img src="ReadmeImg/FocusBlurEffect.gif">
