@@ -73,17 +73,18 @@ function UserList(props) {
 
 
 function ButtonCss(props) {
-	console.log("버튼css")
+	
 	return(
 
 		<div className='cssContatinerSub'>
-			<img src={`${props.users[props.i].image}`} alt="#" width="80%" />
-			<h4>{props.users[props.i].title}</h4>
-			<p>{props.users[props.i].record} </p>
+			<img src={`${props.clicks[props.i].image}`} alt="#" width="80%" />
+			<h4>{props.clicks[props.i].title}</h4>
+			<p>{props.clicks[props.i].record} </p>
 		</div>
 	)
 	
 }
+
 
 // async function Test() {
 // 	const test = await axios.get(`my-json-server.typicode.com/eovhdnjawm1/posts?id=${test}`);
