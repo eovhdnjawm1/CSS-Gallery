@@ -136,11 +136,4 @@ function NavBarCss(props) {
 	)
 }
 
-
-// async function Test() {
-// 	const test = await axios.get(`my-json-server.typicode.com/eovhdnjawm1/posts?id=${test}`);
-// 	const testJson = await test.json();
-// 	const JSON = testJson.data.
-// }
-
 export default MainContainer;
