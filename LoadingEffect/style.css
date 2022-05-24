@@ -1,0 +1,51 @@
+.container {
+	width: 250px;
+	height: 250px;
+	position: relative;
+
+}
+
+.loading:nth-child(1),
+.loading:nth-child(2),
+.loading:nth-child(3) {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	animation: rotate 2s infinite ease-in;
+}
+
+.loading:nth-child(1) {
+	background-color: red;
+}
+
+.loading:nth-child(2) {
+	background-color: green;
+	animation-delay: .3s;
+}
+
+.loading:nth-child(3) {
+	background-color: blue;
+	animation-delay: .6s;
+}
+
+@keyframes rotate {
+
+	0%,
+	100% {
+		left: 95px;
+	}
+
+	25% {
+		transform: scale(.3);
+	}
+
+	50% {
+		left: 0;
+		transform: scale(.6);
+	}
+
+	75% {
+		transform: scale(1);
+	}
+}
