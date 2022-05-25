@@ -133,3 +133,10 @@
 - 작성일자 : 2022-05-23
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/23
 <img src="ReadmeImg/LoadingEffect.gif">
+
+## 24. Focus NavBar
+- 작성일자 : 2022-05-25
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/24
+<img src="ReadmeImg/FoucsNavBar.gif">
+
+
