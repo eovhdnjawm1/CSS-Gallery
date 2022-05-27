@@ -144,4 +144,8 @@
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/25
 <img src="ReadmeImg/ShadowButton.gif">
 
+## 26. Neon Loading
+- 작성일자 : 2022-05-27
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/26
+<img src="ReadmeImg/NeonLoading.gif">
 
