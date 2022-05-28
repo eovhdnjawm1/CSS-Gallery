@@ -1,9 +1,10 @@
 import '../css/Main.css'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link, useNavigate, useParams } from 'react-router-dom'
 import Component3D from './Component3D.js'
-
+import Card3D from './Detail.js'
+import FlipCard from './3dDetails.js'
 
 
 const url = 'https://eovhdnjawm1.github.io/db'
@@ -13,7 +14,7 @@ const jsonEffect = '/effect_data.json'
 const jsonNav = '/navbar_data.json'
 
 function MainContainer() {
-
+	let navigate = useNavigate();
 	let [grapics, setGrapic] = useState([]);
 
 	let [clicks, setClicks] = useState([]);
@@ -45,12 +46,16 @@ function MainContainer() {
 		<div className='mainContainer'>
 			<h1 className='mainTitle'>CSS Gallery</h1>
 			<h1 style={{ color: "#fff" }}>Profile</h1>
-			<Routes>
+			{/* <Routes>
 				<Route path="/" element={<div>메인페이지</div>} />
-				<Route path="/3DCss" element={<div>3D CSS 페이지</div>} />
-				<Route path="/NavCss" element={<div>NavBar CSS 페이지</div>} />
+				<Route path="/3DCss" element={<Card3D />} />
+				<Route path="/NavCss" element={<FlipCard />} />
 				<Route path="/ClickCss" element={<div>Click CSS 페이지</div>} />
 				<Route path="/EffectCss" element={<div>Effect CSS 페이지</div>} />
+			</Routes> */}
+			<Routes>
+				<Route path="/detail/0" element={<Card3D />} />
+				<Route path="/detail/1" element={<FlipCard />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
@@ -59,6 +64,7 @@ function MainContainer() {
 						grapics.map(function (val, i) {
 							return (
 								<div key={i}>
+
 									<Grapic3DCss grapics={grapics} i={i}></Grapic3DCss>
 								</div>
 							)
@@ -78,7 +84,7 @@ function MainContainer() {
 						})
 					}</div>
 				<div className='effectContainer'>
-				<h2>Effect CSS</h2>
+					<h2>Effect CSS</h2>
 					{
 						effects.map(function (val, i) {
 							return (
@@ -90,7 +96,7 @@ function MainContainer() {
 					}
 				</div>
 				<div className='navBarContainer'>
-				<h2>NavBar CSS</h2>
+					<h2>NavBar CSS</h2>
 					{
 						navBars.map(function (val, i) {
 							return (
@@ -110,14 +116,21 @@ function MainContainer() {
 }
 
 function Grapic3DCss(props) {
+	let navigate = useNavigate();
+	let { id } = useParams();
+	let 찾은것 = props.grapics.find((x) => {
+		return x.id == id
+	});
+
 	return (
-		<div className='cssContainerSub'>
-			<Link to="/3DCss" style={{ textDecoration: 'none', color: '#fff' }}>
-				<h4>{props.grapics[props.i].title}</h4>
-				<img src={`${props.grapics[props.i].image}`} alt="#" width="80%" />
-				<p>제작일자 : {props.grapics[props.i].record} </p>
-				<p>분류 : {props.grapics[props.i].content} </p>
-			</Link>
+		// 
+		<div className='cssContainerSub' onClick={() => navigate('/detail/' + props.i)} >
+			{/* <Link to="/3DCss" style={{ textDecoration: 'none', color: '#fff' }}> */}
+			<h4>{props.grapics[props.i].title}</h4>
+			<img src={`${props.grapics[props.i].image}`} alt="#" width="80%" />
+			<p>제작일자 : {props.grapics[props.i].record} </p>
+			<p>분류 : {props.grapics[props.i].content} </p>
+			{/* </Link> */}
 		</div>
 	)
 }
