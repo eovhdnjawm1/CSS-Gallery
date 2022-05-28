@@ -149,3 +149,10 @@
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/26
 <img src="ReadmeImg/NeonLoading.gif">
 
+
+
+## 리엑트화 작업 일지
+2022-05-29
+메인 페이지에서 이미지를 클릭할 경우 해당 css를 직접 테스트 해볼 수 있는 곳으로 이동하는 작업을 하였음
+Parms로 id에 맞는 js 파일을 불러오고 싶었으나 방법을 찾지못함.
+json에 있는 id와 별개로 있는 js 파일은 서로 연관성이 없어서 불러올 수 없다고 생각함
