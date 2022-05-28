@@ -1,27 +1,30 @@
 .App {
   background-color: #1e2d3b;
-
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .cssContainerSub {
   display: flex;
   flex-direction: column;
-
-  color: #fff;
-
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.1),
+    2px 2px 6px 0 rgba(0, 0, 0, 0.8);
 }
 
 .cssContainerSub img {
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #1e2d3b;
 }
-
 
 .cssContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /* column-gap: 25px; */
+  gap: 25px;
 
 }
