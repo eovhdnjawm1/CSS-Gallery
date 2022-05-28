@@ -13,7 +13,7 @@ import Component3D from './Component3D.js'
 
 function MainContainer() {
 
-	let [users, setUsers] = useState([]);
+	let [grapics, setGrapic] = useState([]);
 	let [title, setTitle] = useState();
 	let [content, setcontent] = useState();
 	let [cssImage, setCssImage] = useState();
@@ -25,7 +25,7 @@ function MainContainer() {
 	useEffect(() => {
 		axios.get(url + json3D).then((res) => {
 		let copy = [...res.data]
-		setUsers(copy)
+		setGrapic(copy)
 
 		axios.get(url + jsonButton).then((res) => {
 			let copy = [...res.data]
@@ -49,10 +49,10 @@ function MainContainer() {
 			<h1 style={{color: "#fff"}}>Profile</h1>
 			<div className='cssContainer'>
 			{
-				users.map(function(val, i) {
+				grapics.map(function(val, i) {
 					return (
 						<div  key={i}>
-							<UserList users={users} i={i}></UserList>
+							<Grapic3DCss grapics={grapics} i={i}></Grapic3DCss>
 						</div>
 					)
 				})
@@ -89,12 +89,12 @@ function MainContainer() {
 	)
 }
 
-function UserList(props) {
+function Grapic3DCss(props) {
 	return (
 		<div className='cssContainerSub'>
-			<img src={`${props.users[props.i].image}`} alt="#" width="80%" />
-			<h4>{props.users[props.i].title}</h4>
-			<p>{props.users[props.i].record} </p>
+			<h4>{props.grapics[props.i].title}</h4>
+			<img src={`${props.grapics[props.i].image}`} alt="#" width="80%" />
+			<p>제작일자 : {props.grapics[props.i].record} </p>
 		</div>
 	) 
 } 
@@ -104,10 +104,11 @@ function ButtonCss(props) {
 	
 	return(
 
-		<div className='cssContatinerSub'>
-			<img src={`${props.clicks[props.i].image}`} alt="#" width="80%" />
+		<div className='cssContainerSub'>
 			<h4>{props.clicks[props.i].title}</h4>
-			<p>{props.clicks[props.i].record} </p>
+			<img src={`${props.clicks[props.i].image}`} alt="#" width="80%" />
+			<p>제작일자 : {props.clicks[props.i].record} </p>
+			
 		</div>
 	)
 }
@@ -116,10 +117,10 @@ function EffectCss(props) {
 	
 	return(
 
-		<div className='cssContatinerSub'>
-			<img src={`${props.effects[props.i].image}`} alt="#" width="80%" />
+		<div className='cssContainerSub'>
 			<h4>{props.effects[props.i].title}</h4>
-			<p>{props.effects[props.i].record} </p>
+			<img src={`${props.effects[props.i].image}`} alt="#" width="80%" />
+			<p>제작일자 : {props.effects[props.i].record} </p>
 		</div>
 	)
 }
@@ -128,10 +129,10 @@ function NavBarCss(props) {
 	
 	return(
 
-		<div className='cssContatinerSub'>
-			<img src={`${props.navBars[props.i].image}`} alt="#" width="80%" />
+		<div className='cssContainerSub'>
 			<h4>{props.navBars[props.i].title}</h4>
-			<p>{props.navBars[props.i].record} </p>
+			<img src={`${props.navBars[props.i].image}`} alt="#" width="80%" />
+			<p>제작일자 : {props.navBars[props.i].record} </p>
 		</div>
 	)
 }
