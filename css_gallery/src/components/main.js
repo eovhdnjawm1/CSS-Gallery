@@ -14,9 +14,6 @@ import Component3D from './Component3D.js'
 function MainContainer() {
 
 	let [grapics, setGrapic] = useState([]);
-	let [title, setTitle] = useState();
-	let [content, setcontent] = useState();
-	let [cssImage, setCssImage] = useState();
 
 	let [clicks, setClicks] = useState([]);
 	let [effects, setEffects] = useState([]);
