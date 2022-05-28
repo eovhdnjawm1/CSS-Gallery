@@ -1,6 +1,7 @@
 import '../css/Main.css'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Routes, Route, Link} from 'react-router-dom'
 import Component3D from './Component3D.js'
 
 
@@ -44,6 +45,13 @@ function MainContainer() {
 		<div className='mainContainer'>
 			<h1 className='mainTitle'>CSS Gallery</h1>
 			<h1 style={{color: "#fff"}}>Profile</h1>
+			<Routes>
+				<Route path="/" element={<div>메인페이지</div>}/> 
+				<Route path="/3DCss" element={<div>3D CSS 페이지</div>}/> 
+				<Route path="/NavCss" element={<div>NavBar CSS 페이지</div>}/> 
+				<Route path="/ClickCss" element={<div>Click CSS 페이지</div>}/> 
+				<Route path="/EffectCss" element={<div>Effect CSS 페이지</div>}/> 
+			</Routes>
 			<div className='cssContainer'>
 			{
 				grapics.map(function(val, i) {
@@ -89,9 +97,11 @@ function MainContainer() {
 function Grapic3DCss(props) {
 	return (
 		<div className='cssContainerSub'>
-			<h4>{props.grapics[props.i].title}</h4>
-			<img src={`${props.grapics[props.i].image}`} alt="#" width="80%" />
-			<p>제작일자 : {props.grapics[props.i].record} </p>
+			<Link to="/3DCss" style={{textDecoration: 'none', color: '#fff'}}>
+				<h4>{props.grapics[props.i].title}</h4>
+				<img src={`${props.grapics[props.i].image}`} alt="#" width="80%" />
+				<p>제작일자 : {props.grapics[props.i].record} </p>
+			</Link>
 		</div>
 	) 
 } 
@@ -102,9 +112,12 @@ function ButtonCss(props) {
 	return(
 
 		<div className='cssContainerSub'>
+			<Link to="/ClickCss" style={{textDecoration: 'none', color: '#fff'}}>
+
 			<h4>{props.clicks[props.i].title}</h4>
 			<img src={`${props.clicks[props.i].image}`} alt="#" width="80%" />
 			<p>제작일자 : {props.clicks[props.i].record} </p>
+			</Link>
 			
 		</div>
 	)
@@ -115,9 +128,12 @@ function EffectCss(props) {
 	return(
 
 		<div className='cssContainerSub'>
+			<Link to="/EffectCss" style={{textDecoration: 'none', color: '#fff'}}>
+
 			<h4>{props.effects[props.i].title}</h4>
 			<img src={`${props.effects[props.i].image}`} alt="#" width="80%" />
 			<p>제작일자 : {props.effects[props.i].record} </p>
+			</Link>
 		</div>
 	)
 }
@@ -127,9 +143,12 @@ function NavBarCss(props) {
 	return(
 
 		<div className='cssContainerSub'>
+			<Link to="/NavCss" style={{textDecoration: 'none', color: '#fff'}}>
+
 			<h4>{props.navBars[props.i].title}</h4>
 			<img src={`${props.navBars[props.i].image}`} alt="#" width="80%" />
 			<p>제작일자 : {props.navBars[props.i].record} </p>
+			</Link>
 		</div>
 	)
 }
