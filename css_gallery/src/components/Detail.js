@@ -10,9 +10,9 @@ function CssButton() {
 	return (
 		<div>
 			{/* <h1> {찾은상품.title} </h1> */}
-			<div class='cards3D'>
-				<figure class='card'>
-					<figcaption class="card-title">Flower</figcaption>
+			<div className='cards3D'>
+				<figure className='card'>
+					<figcaption className="card-title">Flower</figcaption>
 				</figure>
 
 			</div>
