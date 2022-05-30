@@ -149,6 +149,10 @@
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/26
 <img src="ReadmeImg/NeonLoading.gif">
 
+## 27. Bounce Loading
+- 작성일자 : 2022-05-30
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/27
+<img src="ReadmeImg/BounceLoading.gif">
 
 
 ## 리엑트화 작업 일지
