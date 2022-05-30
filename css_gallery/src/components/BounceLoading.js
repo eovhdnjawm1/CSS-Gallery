@@ -2,8 +2,11 @@ import '../css/BounceLoading.css'
 
 function BounceLoading() {
 	return(
-		<div>
-
+		<div class="BounceContainer">
+			<div className='ball'></div>
+			<div className='ball'></div>
+			<div className='ball'></div>
+			<span>Loading...</span>
 		</div>
 	)
 }
