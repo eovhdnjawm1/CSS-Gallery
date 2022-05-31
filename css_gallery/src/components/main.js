@@ -67,38 +67,14 @@ function MainContainer() {
 	return (
 		<div className='mainContainer'>
 			<h1 className='mainTitle'>CSS Gallery</h1>
-			<h1 style={{ color: "#fff" }}>Profile</h1>
+			
 
 			<Routes>
-				<Route path="/detail/0" element={<Card3D />} />
-				<Route path="/detail/1" element={<FlipCard />} />
-				<Route path="/detail/2" element={<NeonMovingButton />} />
-				<Route path="/button/0" element={<ButtonFilter />} />
-				<Route path="/button/1" element={<ButtonMenus />} />
-				<Route path="/button/2" element={<ButtonSkew />} />
-				<Route path="/button/3" element={<ButtonHoverAni />} />
-				<Route path="/button/4" element={<ButtonChange />} />
-				<Route path="/button/5" element={<ButtonPusleAni />} />
-				<Route path="/button/6" element={<ButtonShadow />} />
-				<Route path="/effect/0" element={<EffectsOverlap />} />
-				<Route path="/effect/1" element={<EffectVideoText />} />
-				<Route path="/effect/2" element={<EffectLoadingBar />} />
-				<Route path="/effect/3" element={<EffectLinkHover />} />
-				<Route path="/effect/4" element={<EffectColorUp />} />
-				<Route path="/effect/5" element={<EffectChangeFigure />} />
-				<Route path="/effect/6" element={<EffectHoverCardAni />} />
-				<Route path="/effect/7" element={<EffectCenterHover />} />
-				<Route path="/effect/8" element={<EffectGradientBox />} />
-				<Route path="/effect/9" element={<EffectNeonSignIcon />} />
-				<Route path="/effect/10" element={<EffectTextEffect />} />
-				<Route path="/effect/11" element={<EffectFocusBlur />} />
-				<Route path="/effect/12" element={<EffectNeonLoading />} />
-				<Route path="/effect/13" element={<EffectBounceLoading />} />
-				<Route path="/navBar/0" element={<NavBarResponsive />} />
-				<Route path="/navBar/1" element={<NavBarFocusUp />} />
-
-			</Routes>
-			<div className='cssContainer'>
+<Route path="/" element={
+	<div className='cssContainer'>
+		<h1 style={{ color: "#fff" }}>Main Page - 클릭 시 test</h1>
+		<h1 style={{ color: "#fff" }}>Github 소스코드 확인 가능</h1>
+		<a href='https://github.com/eovhdnjawm1/CSS-Gallery' style={{ color: "#fff" }}>Git Checkout</a>
 				<div className='grapicContainer'>
 					<h2>3D CSS</h2>
 					{
@@ -152,6 +128,40 @@ function MainContainer() {
 
 
 			</div>
+}></Route>
+
+				<Route path="/detail/0" element={<Card3D />} />
+				<Route path="/detail/1" element={<FlipCard />} />
+				<Route path="/detail/2" element={<NeonMovingButton />} />
+				
+				<Route path="/button/0" element={<ButtonFilter />} />
+				<Route path="/button/1" element={<ButtonMenus />} />
+				<Route path="/button/2" element={<ButtonSkew />} />
+				<Route path="/button/3" element={<ButtonHoverAni />} />
+				<Route path="/button/4" element={<ButtonChange />} />
+				<Route path="/button/5" element={<ButtonPusleAni />} />
+				<Route path="/button/6" element={<ButtonShadow />} />
+				
+				<Route path="/effect/0" element={<EffectsOverlap />} />
+				<Route path="/effect/1" element={<EffectVideoText />} />
+				<Route path="/effect/2" element={<EffectLoadingBar />} />
+				<Route path="/effect/3" element={<EffectLinkHover />} />
+				<Route path="/effect/4" element={<EffectColorUp />} />
+				<Route path="/effect/5" element={<EffectChangeFigure />} />
+				<Route path="/effect/6" element={<EffectHoverCardAni />} />
+				<Route path="/effect/7" element={<EffectCenterHover />} />
+				<Route path="/effect/8" element={<EffectGradientBox />} />
+				<Route path="/effect/9" element={<EffectNeonSignIcon />} />
+				<Route path="/effect/10" element={<EffectTextEffect />} />
+				<Route path="/effect/11" element={<EffectFocusBlur />} />
+				<Route path="/effect/12" element={<EffectNeonLoading />} />
+				<Route path="/effect/13" element={<EffectBounceLoading />} />
+				
+				<Route path="/navBar/0" element={<NavBarResponsive />} />
+				<Route path="/navBar/1" element={<NavBarFocusUp />} />
+
+			</Routes>
+			
 		</div>
 	)
 }
@@ -176,13 +186,11 @@ function ButtonCss(props) {
 	return (
 
 		<div className='cssContainerSub' onClick={() => navigate('/button/' + props.i)}>
-			<Link to="/ClickCss" style={{ textDecoration: 'none', color: '#fff' }}>
 
 				<h4>{props.clicks[props.i].title}</h4>
 				<img src={`${props.clicks[props.i].image}`} alt="#" width="80%" />
 				<p>제작일자 : {props.clicks[props.i].record} </p>
 				<p>분류 : {props.clicks[props.i].content} </p>
-			</Link>
 
 		</div>
 	)
@@ -195,13 +203,11 @@ function EffectCss(props) {
 	return (
 
 		<div className='cssContainerSub' onClick={() => navigate('/effect/' + props.i)}>
-			<Link to="/EffectCss" style={{ textDecoration: 'none', color: '#fff' }}>
 
 				<h4>{props.effects[props.i].title}</h4>
 				<img src={`${props.effects[props.i].image}`} alt="#" width="80%" />
 				<p>제작일자 : {props.effects[props.i].record} </p>
 				<p>분류 : {props.effects[props.i].content} </p>
-			</Link>
 		</div>
 	)
 }
@@ -212,13 +218,11 @@ function NavBarCss(props) {
 	return (
 
 		<div className='cssContainerSub' onClick={() => navigate('/navBar/' + props.i)}>
-			<Link to="/NavCss" style={{ textDecoration: 'none', color: '#fff' }}>
 
 				<h4>{props.navBars[props.i].title}</h4>
 				<img src={`${props.navBars[props.i].image}`} alt="#" width="80%" />
 				<p>제작일자 : {props.navBars[props.i].record} </p>
 				<p>분류 : {props.navBars[props.i].content} </p>
-			</Link>
 		</div>
 	)
 }
