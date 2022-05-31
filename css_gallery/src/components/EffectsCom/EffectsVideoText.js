@@ -40,7 +40,7 @@ function EffectVideoText() {
 			<Video>
 
 			<section className="showCase">
-		<video src={require("../../img/flower.webm")} autoplay loop muted></video>
+		<video src={require("../../img/flower.webm")} autoPlay loop muted></video>
 		{/* <!-- 출처 : MDN Output Video https://developer.mozilla.org/ko/docs/Web/HTML/Element/Video --> */}
 		<h1 className='title'>VIDEO TEXT</h1>
 	</section>
