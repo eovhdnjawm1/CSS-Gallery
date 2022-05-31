@@ -2,14 +2,6 @@ import '../../css/ButtonCom/ButtonHoverAni.css'
 import styled from 'styled-components'
 
 
-// let BlackBox = styled.div`
-// 	background : black;
-// 	padding: 20px;
-// 	width: 150px;
-// 	height: 100px;
-// 	color: #fff;
-// `
-
 let BlackBox = styled.button`
 & {
 	color: #fff;
