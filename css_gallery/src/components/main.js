@@ -28,7 +28,7 @@ import EffectFocusBlur from './EffectsCom/EffectsFocusBlur';
 import EffectNeonLoading from './EffectsCom/EffectsNeonLoading';
 import EffectBounceLoading from './EffectsCom/EffectsBounceLoading';
 import NavBarResponsive from './NavBarCom/NavResponsive';
-
+import NavBarFocusUp from './NavBarCom/NavFocusUp';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -102,7 +102,7 @@ function MainContainer() {
 				<Route path="/effect/12" element={<EffectNeonLoading />} />
 				<Route path="/effect/13" element={<EffectBounceLoading />} />
 				<Route path="/navBar/0" element={<NavBarResponsive />} />
-				<Route path="/effect/1" element={<EffectBounceLoading />} />
+				<Route path="/navBar/1" element={<NavBarFocusUp />} />
 
 			</Routes>
 			<div className='cssContainer'>
