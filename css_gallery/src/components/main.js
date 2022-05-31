@@ -15,6 +15,9 @@ import ButtonPusleAni from './ButtonCom/ButtonPulseAni';
 import ButtonShadow from './ButtonCom/ButtonShadow';
 import EffectsOverlap from './EffectsCom/EffectsOverlap';
 import EffectVideoText from './EffectsCom/EffectsVideoText';
+import EffectLoadingBar from './EffectsCom/EffectsLoadingBar';
+import EffectLinkHover from './EffectsCom/EffectsLinkHover';
+import EffectColorUp from './EffectsCom/EffectsImageColorUp';
 
 
 const url = 'https://eovhdnjawm1.github.io/db'
@@ -76,6 +79,17 @@ function MainContainer() {
 				<Route path="/button/6" element={<ButtonShadow />} />
 				<Route path="/effect/0" element={<EffectsOverlap />} />
 				<Route path="/effect/1" element={<EffectVideoText />} />
+				<Route path="/effect/2" element={<EffectLoadingBar />} />
+				<Route path="/effect/3" element={<EffectLinkHover />} />
+				<Route path="/effect/4" element={<EffectColorUp />} />
+				{/* <Route path="/effect/5" element={<EffectChangeFigure />} /> */}
+				{/* <Route path="/effect/6" element={<EffectHoverCardAni />} /> */}
+				{/* <Route path="/effect/7" element={<EffectHoverEffect />} /> */}
+				{/* <Route path="/effect/8" element={<EffectNeonSign />} /> */}
+				{/* <Route path="/effect/9" element={<EffectTextEffect />} /> */}
+				{/* <Route path="/effect/10" element={<EffectFocusBlur />} /> */}
+				{/* <Route path="/effect/11" element={<EffectNeonLoading />} /> */}
+				{/* <Route path="/effect/12" element={<EffectBounceLoading />} /> */}
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
