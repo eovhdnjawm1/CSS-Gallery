@@ -21,6 +21,7 @@ import EffectColorUp from './EffectsCom/EffectsImageColorUp';
 import EffectChangeFigure from './EffectsCom/EffectsChangeFigure';
 import EffectHoverCardAni from './EffectsCom/EffectsHoverCardAni';
 import EffectCenterHover from './EffectsCom/EffectsCenterHover';
+import EffectGradientBox from './EffectsCom/EffectsGradientBox';
 
 
 const url = 'https://eovhdnjawm1.github.io/db'
@@ -88,7 +89,7 @@ function MainContainer() {
 				<Route path="/effect/5" element={<EffectChangeFigure />} />
 				<Route path="/effect/6" element={<EffectHoverCardAni />} />
 				<Route path="/effect/7" element={<EffectCenterHover />} />
-				{/* <Route path="/effect/8" element={<EffectNeonSign />} /> */}
+				<Route path="/effect/8" element={<EffectGradientBox />} />
 				{/* <Route path="/effect/9" element={<EffectTextEffect />} /> */}
 				{/* <Route path="/effect/10" element={<EffectFocusBlur />} /> */}
 				{/* <Route path="/effect/11" element={<EffectNeonLoading />} /> */}
