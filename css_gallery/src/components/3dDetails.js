@@ -4,7 +4,7 @@ import '../css/3dDetails.css';
 function GrapicCss() {
 	return (
 		<div>
-				<div class="main-container">
+				<div className="main-container">
 		<div className='flipcard'>
 			<div className="front">
 				<img src={require("../img/3.png")} alt="#" className="img" />
