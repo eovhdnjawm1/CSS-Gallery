@@ -6,6 +6,7 @@ import Component3D from './Component3D.js'
 import Card3D from './Detail.js'
 import FlipCard from './3dDetails.js'
 import NeonMovingButton from './3dCom/NeonMovingButton';
+import ButtonFilter from './ButtonCom/ButtonFilter';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -57,6 +58,7 @@ function MainContainer() {
 				<Route path="/detail/0" element={<Card3D />} />
 				<Route path="/detail/1" element={<FlipCard />} />
 				<Route path="/detail/2" element={<NeonMovingButton />} />
+				<Route path="/button/0" element={<ButtonFilter />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
@@ -138,10 +140,10 @@ function Grapic3DCss(props) {
 
 
 function ButtonCss(props) {
-
+	let navigate = useNavigate();
 	return (
 
-		<div className='cssContainerSub'>
+		<div className='cssContainerSub' onClick={() => navigate('/button/' + props.i)}>
 			<Link to="/ClickCss" style={{ textDecoration: 'none', color: '#fff' }}>
 
 				<h4>{props.clicks[props.i].title}</h4>
