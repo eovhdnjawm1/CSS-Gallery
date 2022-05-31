@@ -1,3 +1,6 @@
+import styled from 'styled-components'
+
+let BounceLoading = styled.div`
 .BounceContainer {
 	margin: auto;
 	padding-top: 50px;
@@ -42,3 +45,23 @@
 		transform: translateY(-50px) scaleX(1);
 	}
 }
+`
+
+function EffectBounceLoading() {
+	return (
+		<>
+			<BounceLoading>
+			<div class="BounceContainer">
+			<div className='ball'></div>
+			<div className='ball'></div>
+			<div className='ball'></div>
+			<span>Loading...</span>
+		</div>
+
+			</BounceLoading>
+		</>
+
+	)
+}
+
+export default EffectBounceLoading;

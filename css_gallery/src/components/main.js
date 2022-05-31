@@ -26,6 +26,8 @@ import EffectNeonSignIcon from './EffectsCom/EffectsNeonSignIcon';
 import EffectTextEffect from './EffectsCom/EffectsTextEffect';
 import EffectFocusBlur from './EffectsCom/EffectsFocusBlur';
 import EffectNeonLoading from './EffectsCom/EffectsNeonLoading';
+import EffectBounceLoading from './EffectsCom/EffectsBounceLoading';
+
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -97,6 +99,7 @@ function MainContainer() {
 				<Route path="/effect/10" element={<EffectTextEffect />} />
 				<Route path="/effect/11" element={<EffectFocusBlur />} />
 				<Route path="/effect/12" element={<EffectNeonLoading />} />
+				<Route path="/effect/13" element={<EffectBounceLoading />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
