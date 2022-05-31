@@ -14,6 +14,8 @@ import ButtonChange from './ButtonCom/ButtonChange';
 import ButtonPusleAni from './ButtonCom/ButtonPulseAni';
 import ButtonShadow from './ButtonCom/ButtonShadow';
 import EffectsOverlap from './EffectsCom/EffectsOverlap';
+import EffectVideoText from './EffectsCom/EffectsVideoText';
+
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -73,6 +75,7 @@ function MainContainer() {
 				<Route path="/button/5" element={<ButtonPusleAni />} />
 				<Route path="/button/6" element={<ButtonShadow />} />
 				<Route path="/effect/0" element={<EffectsOverlap />} />
+				<Route path="/effect/1" element={<EffectVideoText />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
