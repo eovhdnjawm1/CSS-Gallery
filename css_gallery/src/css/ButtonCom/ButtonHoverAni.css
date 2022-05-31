@@ -1,3 +1,7 @@
+.ButtonHoverAniContainer {
+	height: 150px;
+}
+
 .ButtonHoverAniContainer .btn {
 	color: #fff;
 	background: none;
