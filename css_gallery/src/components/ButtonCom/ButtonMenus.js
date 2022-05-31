@@ -3,17 +3,17 @@ import '../../css/ButtonCom/ButtonMenus.css'
 function ButtonMenus() {
 	return(
 		<div className='ButtonMenusContainer'>
-		<div class="navBar">
+		<div className="navBar">
 		<a href="#">
-			<i class="fas fa-th"></i>
+			<i className="fas fa-th"></i>
 			<b>Menus</b>
 		</a>
 		<a href="#">
-			<i class="far fa-bookmark"></i>
+			<i className="far fa-bookmark"></i>
 			<b>Book</b>
 		</a>
 		<a href="#">
-			<i class="fas fa-id-badge"></i>
+			<i className="fas fa-id-badge"></i>
 			<b>Profiles</b>
 		</a>
 		<span></span>

@@ -8,6 +8,7 @@ import FlipCard from './3dDetails.js'
 import NeonMovingButton from './3dCom/NeonMovingButton';
 import ButtonFilter from './ButtonCom/ButtonFilter';
 import ButtonMenus from './ButtonCom/ButtonMenus';
+import ButtonSkew from './ButtonCom/ButtonSkewAni';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -61,6 +62,7 @@ function MainContainer() {
 				<Route path="/detail/2" element={<NeonMovingButton />} />
 				<Route path="/button/0" element={<ButtonFilter />} />
 				<Route path="/button/1" element={<ButtonMenus />} />
+				<Route path="/button/2" element={<ButtonSkew />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>

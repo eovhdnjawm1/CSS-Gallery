@@ -4,7 +4,7 @@ function ButtonFilter() {
 	return(
 		<div className='ButtonFilterContainer'>
 	<input type="checkbox" id="toggle" />
-	<label for="toggle" class="button"></label>
+	<label for="toggle" className="button"></label>
 		</div>
 	)
 }
