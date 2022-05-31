@@ -2,9 +2,8 @@ import '../css/Main.css'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Routes, Route, Link, useNavigate, useParams } from 'react-router-dom'
-import Component3D from './Component3D.js'
-import Card3D from './Detail.js'
-import FlipCard from './3dDetails.js'
+import Card3D from './3dCom/Card3D.js'
+import FlipCard from './3dCom/FlipCard';
 import NeonMovingButton from './3dCom/NeonMovingButton';
 import ButtonFilter from './ButtonCom/ButtonFilter';
 import ButtonMenus from './ButtonCom/ButtonMenus';
@@ -69,13 +68,7 @@ function MainContainer() {
 		<div className='mainContainer'>
 			<h1 className='mainTitle'>CSS Gallery</h1>
 			<h1 style={{ color: "#fff" }}>Profile</h1>
-			{/* <Routes>
-				<Route path="/" element={<div>메인페이지</div>} />
-				<Route path="/3DCss" element={<Card3D />} />
-				<Route path="/NavCss" element={<FlipCard />} />
-				<Route path="/ClickCss" element={<div>Click CSS 페이지</div>} />
-				<Route path="/EffectCss" element={<div>Effect CSS 페이지</div>} />
-			</Routes> */}
+
 			<Routes>
 				<Route path="/detail/0" element={<Card3D />} />
 				<Route path="/detail/1" element={<FlipCard />} />
@@ -165,20 +158,14 @@ function MainContainer() {
 
 function Grapic3DCss(props) {
 	let navigate = useNavigate();
-	let { id } = useParams();
-	let 찾은것 = props.grapics.find((x) => {
-		return x.id == id
-	});
 
 	return (
 		// 
 		<div className='cssContainerSub' onClick={() => navigate('/detail/' + props.i)} >
-			{/* <Link to="/3DCss" style={{ textDecoration: 'none', color: '#fff' }}> */}
 			<h4>{props.grapics[props.i].title}</h4>
 			<img src={`${props.grapics[props.i].image}`} alt="#" width="80%" />
 			<p>제작일자 : {props.grapics[props.i].record} </p>
 			<p>분류 : {props.grapics[props.i].content} </p>
-			{/* </Link> */}
 		</div>
 	)
 }

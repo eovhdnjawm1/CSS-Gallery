@@ -1,4 +1,3 @@
-import '../css/Detail.css';
 import styled from 'styled-components'
 
 let CardBtn = styled.div`
@@ -15,7 +14,7 @@ let CardBtn = styled.div`
 
 	width: 200px;
 	height: 250px;
-	background: url('../../img/over_0.jpg') center no-repeat;
+	background-image: url('../../img/over_0.jpg') center no-repeat;
 	background-size: cover;
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	border-radius: 4px;
@@ -37,6 +36,7 @@ let CardBtn = styled.div`
 	right: 10px;
 	transform: translateY(-50%);
 	transition: transform .5s;
+	z-index:3;
 }
 
 .card:hover .card-title {
@@ -51,10 +51,9 @@ function CssButton() {
 			<CardBtn>
 
 			<div className='cards3D'>
-				<figure className='card'>
+				<figure className='card' style={{backgroundImage:`url(../../img/over_0.jpg)`}}>
 					<figcaption className="card-title">Flower</figcaption>
 				</figure>
-
 			</div>
 			</CardBtn>
 		</div>
