@@ -27,6 +27,7 @@ import EffectTextEffect from './EffectsCom/EffectsTextEffect';
 import EffectFocusBlur from './EffectsCom/EffectsFocusBlur';
 import EffectNeonLoading from './EffectsCom/EffectsNeonLoading';
 import EffectBounceLoading from './EffectsCom/EffectsBounceLoading';
+import NavBarResponsive from './NavBarCom/NavResponsive';
 
 
 const url = 'https://eovhdnjawm1.github.io/db'
@@ -100,6 +101,9 @@ function MainContainer() {
 				<Route path="/effect/11" element={<EffectFocusBlur />} />
 				<Route path="/effect/12" element={<EffectNeonLoading />} />
 				<Route path="/effect/13" element={<EffectBounceLoading />} />
+				<Route path="/navBar/0" element={<NavBarResponsive />} />
+				<Route path="/effect/1" element={<EffectBounceLoading />} />
+
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
@@ -217,9 +221,10 @@ function EffectCss(props) {
 
 function NavBarCss(props) {
 
+	let navigate = useNavigate();
 	return (
 
-		<div className='cssContainerSub'>
+		<div className='cssContainerSub' onClick={() => navigate('/navBar/' + props.i)}>
 			<Link to="/NavCss" style={{ textDecoration: 'none', color: '#fff' }}>
 
 				<h4>{props.navBars[props.i].title}</h4>
