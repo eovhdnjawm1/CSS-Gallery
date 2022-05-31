@@ -68,7 +68,7 @@ function EffectTextEffect() {
 	return(
 		<>
 		<TextEffect>
-		<div class="container">
+		<div className="container">
 		<h2>Hello
 			<span>World .</span>
 		</h2>
