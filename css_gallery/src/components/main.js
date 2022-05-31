@@ -7,6 +7,7 @@ import Card3D from './Detail.js'
 import FlipCard from './3dDetails.js'
 import NeonMovingButton from './3dCom/NeonMovingButton';
 import ButtonFilter from './ButtonCom/ButtonFilter';
+import ButtonMenus from './ButtonCom/ButtonMenus';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -59,6 +60,7 @@ function MainContainer() {
 				<Route path="/detail/1" element={<FlipCard />} />
 				<Route path="/detail/2" element={<NeonMovingButton />} />
 				<Route path="/button/0" element={<ButtonFilter />} />
+				<Route path="/button/1" element={<ButtonMenus />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
