@@ -5,7 +5,7 @@ import { Routes, Route, Link, useNavigate, useParams } from 'react-router-dom'
 import Component3D from './Component3D.js'
 import Card3D from './Detail.js'
 import FlipCard from './3dDetails.js'
-
+import NeonMovingButton from './3dCom/NeonMovingButton';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -56,6 +56,7 @@ function MainContainer() {
 			<Routes>
 				<Route path="/detail/0" element={<Card3D />} />
 				<Route path="/detail/1" element={<FlipCard />} />
+				<Route path="/detail/2" element={<NeonMovingButton />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
