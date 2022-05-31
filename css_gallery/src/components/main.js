@@ -9,6 +9,7 @@ import NeonMovingButton from './3dCom/NeonMovingButton';
 import ButtonFilter from './ButtonCom/ButtonFilter';
 import ButtonMenus from './ButtonCom/ButtonMenus';
 import ButtonSkew from './ButtonCom/ButtonSkewAni';
+import ButtonHoverAni from './ButtonCom/ButtonHoverAni';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -63,6 +64,7 @@ function MainContainer() {
 				<Route path="/button/0" element={<ButtonFilter />} />
 				<Route path="/button/1" element={<ButtonMenus />} />
 				<Route path="/button/2" element={<ButtonSkew />} />
+				<Route path="/button/3" element={<ButtonHoverAni />} />
 			</Routes>
 			<div className='cssContainer'>
 				<div className='grapicContainer'>
