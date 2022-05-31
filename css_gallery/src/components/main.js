@@ -22,7 +22,7 @@ import EffectChangeFigure from './EffectsCom/EffectsChangeFigure';
 import EffectHoverCardAni from './EffectsCom/EffectsHoverCardAni';
 import EffectCenterHover from './EffectsCom/EffectsCenterHover';
 import EffectGradientBox from './EffectsCom/EffectsGradientBox';
-
+import EffectNeonSignIcon from './EffectsCom/EffectsNeonSignIcon';
 
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
@@ -90,7 +90,7 @@ function MainContainer() {
 				<Route path="/effect/6" element={<EffectHoverCardAni />} />
 				<Route path="/effect/7" element={<EffectCenterHover />} />
 				<Route path="/effect/8" element={<EffectGradientBox />} />
-				{/* <Route path="/effect/9" element={<EffectTextEffect />} /> */}
+				<Route path="/effect/9" element={<EffectNeonSignIcon />} />
 				{/* <Route path="/effect/10" element={<EffectFocusBlur />} /> */}
 				{/* <Route path="/effect/11" element={<EffectNeonLoading />} /> */}
 				{/* <Route path="/effect/12" element={<EffectBounceLoading />} /> */}
