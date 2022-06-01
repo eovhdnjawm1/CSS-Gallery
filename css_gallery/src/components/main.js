@@ -29,6 +29,8 @@ import EffectBounceLoading from './EffectsCom/EffectsBounceLoading';
 import NavBarResponsive from './NavBarCom/NavResponsive';
 import NavBarFocusUp from './NavBarCom/NavFocusUp';
 
+import NavInteraction from './NavBarCom/NavInteraction';
+
 const url = 'https://eovhdnjawm1.github.io/db'
 const json3D = '/3D_data.json'
 const jsonButton = '/button_data.json'
@@ -70,8 +72,10 @@ function MainContainer() {
 			
 
 			<Routes>
+			<Route path="/detail/0" element={<NavInteraction />} >테스트용</Route>
 <Route path="/" element={
 	<div className='cssContainer'>
+		
 		<h1 style={{ color: "#fff" }}>Main Page - 클릭 시 test</h1>
 		<h1 style={{ color: "#fff" }}>Github 소스코드 확인 가능</h1>
 		<a href='https://github.com/eovhdnjawm1/CSS-Gallery' style={{ color: "#fff" }}>Git Checkout</a>
