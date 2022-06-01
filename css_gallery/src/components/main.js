@@ -72,7 +72,6 @@ function MainContainer() {
 			
 
 			<Routes>
-			<Route path="/detail/0" element={<NavInteraction />} >테스트용</Route>
 <Route path="/" element={
 	<div className='cssContainer'>
 		
@@ -163,6 +162,7 @@ function MainContainer() {
 				
 				<Route path="/navBar/0" element={<NavBarResponsive />} />
 				<Route path="/navBar/1" element={<NavBarFocusUp />} />
+				<Route path="/navBar/2" element={<NavInteraction />} />
 
 			</Routes>
 			
