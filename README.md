@@ -154,6 +154,10 @@
 - PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/27
 <img src="ReadmeImg/BounceLoading.gif">
 
+## 28. InteractionNavBar
+- 작성일자 : 2022-06-01
+- PR Link : https://github.com/eovhdnjawm1/CSS-Gallery/pull/28
+<img src="ReadmeImg/NavInteraction.gif">
 
 ## 리엑트화 작업 일지
 ### 2022-05-29
@@ -182,3 +186,14 @@ styled components로
 ```
 을 사용하였으나 마찬가지로 실패 하였음, 대신 css파일을 추가로 작성하지 않고
 styled-components로 작업하여 js 파일 하나로 프로젝트 제작 중
+
+### 2022-06-01
+ html 파일 자체를 만들지 않으면서 Interaction Nav 작업
+이전에는 html, css 파일로 갤러리를 만들었기 때문에 코드 자동완성이 되었는데
+styled-components로 작업하다보니 자동완성이 안뜨는 상황
+vscode styled-components 확장프로그램 설치하여 문제해결
+
+aspect-ratio 화면 비율 조절 속성
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
+참고
