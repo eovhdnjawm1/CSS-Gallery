@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CSS-Gallery-Project/static/css/main.4707d21f.css",
+    "main.js": "/CSS-Gallery-Project/static/js/main.466822a4.js",
+    "static/js/787.2fb3a26a.chunk.js": "/CSS-Gallery-Project/static/js/787.2fb3a26a.chunk.js",
+    "static/media/over_1.jpg": "/CSS-Gallery-Project/static/media/over_1.2cf79b56600ee4cb984c.jpg",
+    "static/media/over_2.jpg": "/CSS-Gallery-Project/static/media/over_2.a6049f3e867da004d6f9.jpg",
+    "static/media/flower.webm": "/CSS-Gallery-Project/static/media/flower.8bbdf3e128823eff855e.webm",
+    "static/media/over_0.jpg": "/CSS-Gallery-Project/static/media/over_0.47c38129ee0e5a7a1e24.jpg",
+    "static/media/over_3.jpg": "/CSS-Gallery-Project/static/media/over_3.fd9fc0153df47bd1264e.jpg",
+    "static/media/3.png": "/CSS-Gallery-Project/static/media/3.53ebe5897a7230413bab.png",
+    "static/media/1.jpg": "/CSS-Gallery-Project/static/media/1.42e6bf3052bbf965ac5e.jpg",
+    "static/media/sun.svg": "/CSS-Gallery-Project/static/media/sun.4217f94588df0628d561.svg",
+    "index.html": "/CSS-Gallery-Project/index.html",
+    "static/media/moon.svg": "/CSS-Gallery-Project/static/media/moon.6b83b93722e8c73eab92.svg",
+    "main.4707d21f.css.map": "/CSS-Gallery-Project/static/css/main.4707d21f.css.map",
+    "main.466822a4.js.map": "/CSS-Gallery-Project/static/js/main.466822a4.js.map",
+    "787.2fb3a26a.chunk.js.map": "/CSS-Gallery-Project/static/js/787.2fb3a26a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4707d21f.css",
+    "static/js/main.466822a4.js"
+  ]
+}
